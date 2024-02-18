@@ -12,5 +12,6 @@ public class Ex02 {
             termoTemp2 = termoTemp1;
             termoTemp1 = fibonacci;
         }
+        teclado.close();
     }
 }
