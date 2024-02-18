@@ -1,8 +1,7 @@
 import java.util.Scanner;
-
 public class Ex01 {
     public static void main(String[] args) {
-        int n, m, count = 0;
+        int n, m, contador = 0;
         Scanner teclado = new Scanner(System.in);
         System.out.print("Digite um número positivo maior que 1: ");
         n = teclado.nextInt();
@@ -10,7 +9,7 @@ public class Ex01 {
         m = teclado.nextInt();
 
         for (int i = 0; i < m; i++) {
-            if (count % 2 == 0) {
+            if (contador % 2 == 0) {
                 for (int j = 0; j <= n; j++) {
                     System.out.print(j);
                 }
@@ -19,7 +18,7 @@ public class Ex01 {
                     System.out.print(j);
                 }
             }
-            count++;
+            contador++;
             System.out.println();
         }
         teclado.close();
