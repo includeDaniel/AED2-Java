@@ -4,10 +4,10 @@ public class Ex04 {
         double[][] matriz = CriaMatriz();
         double[][] transposta = TranspoeMatriz(matriz);
 
-        System.out.println("Impressão da matriz:");
+        System.out.println("Impressão da matriz: ");
         ImprimeMatriz(matriz);
         System.out.println();
-        System.out.println("Impressão da transposta da matriz:");
+        System.out.println("Impressão da transposta da matriz: ");
         ImprimeMatriz(transposta);
     }
 
