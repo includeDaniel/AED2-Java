@@ -1,4 +1,5 @@
-public class Ex05 {
+package Ex05;
+public class index {
     public static void main(String[] args) {
         Produto camisa = new Produto("bem confortável", (float) 53.4, 4);
         Produto camisa2 = new Produto("desconfortável", (float) 12.4, 15);
