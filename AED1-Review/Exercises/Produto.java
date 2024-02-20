@@ -1,14 +1,16 @@
 public class Produto {
-    private int id;
+    private final int id;
     private String descricao;
     private float preco;
     private int quant;
-    private int cont;
+    private static int cont = 0;
 
     public Produto(String d, float p, int q) {
         this.descricao = d;
         this.preco = p;
         this.quant = q;
+        cont++;
+        this.id = cont;
     }
     public int getCont() {
         return cont;
@@ -17,10 +19,7 @@ public class Produto {
         return id;
     }
     public boolean emEstoque() {
-        if(quant <= 0) {
-            return false;
-        }
-        return true;
+        return quant > 0;
     }
     public void setDescricao(String d) {
         this.descricao = d;
@@ -30,5 +29,15 @@ public class Produto {
     }
     public void setQuant(int q) {
         this.quant = q;
+    }
+
+    @Override
+    public String toString() {
+        return "Produto{" +
+                "id=" + id +
+                ", descricao='" + descricao + '\'' +
+                ", preco=" + preco +
+                ", quant=" + quant +
+                '}';
     }
 }
