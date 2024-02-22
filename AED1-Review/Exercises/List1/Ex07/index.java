@@ -1,4 +1,4 @@
-package Ex07;
+package List1.Ex07;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;

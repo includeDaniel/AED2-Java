@@ -1,4 +1,4 @@
-package Ex05;
+package List1.Ex05;
 public class index {
     public static void main(String[] args) {
         Produto camisa = new Produto("bem confortável", (float) 53.4, 4);

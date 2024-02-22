@@ -1,4 +1,4 @@
-package Ex06;
+package List1.Ex06;
 public abstract class Mamifero {
     public int NumPatas;
     public static void come() {

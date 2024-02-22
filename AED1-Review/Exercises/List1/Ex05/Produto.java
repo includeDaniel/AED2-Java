@@ -1,4 +1,4 @@
-package Ex05;
+package List1.Ex05;
 public class Produto {
         private final int id;
         private String descricao;

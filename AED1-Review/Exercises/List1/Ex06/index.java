@@ -1,4 +1,4 @@
-package Ex06;
+package List1.Ex06;
 
 public class index {
     public static void main(String[] args) {
