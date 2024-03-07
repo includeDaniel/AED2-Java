@@ -1,0 +1,3 @@
+    A herança permite que você reutilize códigos que ja foram criados na complementação e criação de novos códigos com
+    novas funcionalidades e isso faz com que ganhemos tempo no desenvolvimento e previne erros de sintaxe, também faz
+    com que o código seja mais semântico e entendível ajudando ate mesmo na manutenção.

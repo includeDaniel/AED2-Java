@@ -62,7 +62,7 @@ public class Conta {
     }
 
     public String toString() {
-        return "Cliente: " + this.nome + "\riCPE: " + this.cpf + "\nSaldo: " + this.saldo + "\nLimite: " + this.limiteBanco;
+        return "Cliente: " + this.nome + "\nCPF: " + this.cpf + "\nSaldo: " + this.saldo + "\nLimite: " + this.limiteBanco;
     }
 
 
