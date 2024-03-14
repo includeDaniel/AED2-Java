@@ -5,9 +5,9 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        ArrayList<String> teste= new ArrayList<>();
-        PopulaLista(teste);
-        System.out.println(teste);
+        ArrayList<String> L = new ArrayList<>();
+        PopulaLista(L);
+        ImprimeLista(L);
 
     }
     public static void PopulaLista(ArrayList<String> Lista) {
@@ -18,5 +18,11 @@ public class Main {
             n = console.nextLine();
             Lista.add(n);
         } while (!n.equalsIgnoreCase("stop"));
+    }
+
+    public static void ImprimeLista(ArrayList<String> Lista) {
+        for (String a: Lista) {
+            System.out.println(a);
+        }
     }
 }
