@@ -1,4 +1,4 @@
-package List3;
+package List3.Ex01;
 
 import javax.swing.JOptionPane;
 public class Banco {
@@ -16,13 +16,8 @@ public class Banco {
         try {
             c.saca(saque);
 
-        } catch (GastandoLimiteExeception e) {
+        } catch (GastandoLimiteExeception | SaldoInsuficienteException e) {
             JOptionPane.showMessageDialog(null, e);
-            JOptionPane.showMessageDialog(null, c.toString());
-        } catch (SaldoInsuficienteException e) {
-            JOptionPane.showMessageDialog(null, e);
-
-
         }
         JOptionPane.showMessageDialog(null, c.toString());
     }

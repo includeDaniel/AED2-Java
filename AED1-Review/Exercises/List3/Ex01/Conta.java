@@ -1,4 +1,4 @@
-package List3;
+package List3.Ex01;
 
 public class Conta {
     private double saldo;
@@ -57,12 +57,12 @@ public class Conta {
             setSaldo(0);
             throw new GastandoLimiteExeception("Seu limite está em: " + this.limiteBanco);
         } else {
-            throw new SaldoInsuficienteException("Seu saldo " + this.saldo + "\n Você tentou sacar: " + valor);
+            throw new SaldoInsuficienteException("Seu saldo " + this.saldo + "\ne seu limite: " + this.limiteBanco + "\n Você tentou sacar: " + valor);
         }
     }
 
     public String toString() {
-        return "Cliente: " + this.nome + "\riCPE: " + this.cpf + "\nSaldo: " + this.saldo + "\nLimite: " + this.limiteBanco;
+        return "Cliente: " + this.nome + "\nCPF: " + this.cpf + "\nSaldo: " + this.saldo + "\nLimite: " + this.limiteBanco;
     }
 
 
