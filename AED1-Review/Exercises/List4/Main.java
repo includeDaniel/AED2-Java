@@ -10,18 +10,20 @@ public class Main {
         PopulaLista(L);
         ImprimeLista(L);
         System.out.println(EncontraNomeSequencial(L, "Dan"));
-        System.out.println();
         System.out.println(EncontraNomeBinario(L, "Dan"));
+
+        RemoveNome(L, "Dan");
+        ImprimeLista(L);
 
     }
     public static void PopulaLista(ArrayList<String> lista) {
-        String n;
+        String n = "";
         Scanner console = new Scanner(System.in);
         System.out.println("Digite nomes para popular o array | 'STOP' para parar");
-        do {
+        while (!n.equalsIgnoreCase("stop")){
             n = console.nextLine();
-            lista.add(n);
-        } while (!n.equalsIgnoreCase("stop"));
+            if(!n.equalsIgnoreCase("stop")) lista.add(n);
+        }
     }
 
     public static void ImprimeLista(ArrayList<String> lista) {
@@ -39,9 +41,9 @@ public class Main {
 
     public static boolean EncontraNomeBinario(ArrayList<String> list, String n) {
         Collections.sort(list);
-        int init = 0, middle, end = middle = list.size() -1;
+        int init = 0, middle, end = list.size() -1;
         while (init <= end) {
-            middle = (init + end) /2;
+            middle = (end - init) /2;
             if(n.equalsIgnoreCase(list.get(middle))) {
                 return true;
             } else if(n.compareToIgnoreCase(list.get(middle)) > 0) {
@@ -51,5 +53,11 @@ public class Main {
             }
         }
         return false;
+    }
+
+    public static void RemoveNome(ArrayList<String> list, String n) {
+        for (int i = 0; i <= list.size() -1; i++) {
+            if(list.get(i).equalsIgnoreCase(n)) list.remove(i);
+        }
     }
 }
