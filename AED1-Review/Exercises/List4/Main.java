@@ -12,8 +12,10 @@ public class Main {
         System.out.println(EncontraNomeSequencial(L, "Dan"));
         System.out.println(EncontraNomeBinario(L, "Dan"));
 
-        RemoveNome(L, "Dan");
+        RemoveNomeSequencial(L, "Dan");
         ImprimeLista(L);
+
+
 
     }
     public static void PopulaLista(ArrayList<String> lista) {
@@ -55,9 +57,10 @@ public class Main {
         return false;
     }
 
-    public static void RemoveNome(ArrayList<String> list, String n) {
+    public static void RemoveNomeSequencial(ArrayList<String> list, String n) {
         for (int i = 0; i <= list.size() -1; i++) {
             if(list.get(i).equalsIgnoreCase(n)) list.remove(i);
         }
     }
+
 }
