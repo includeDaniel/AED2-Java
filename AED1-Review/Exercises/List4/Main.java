@@ -2,29 +2,54 @@ package List4;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.Collections;
 
 public class Main {
     public static void main(String[] args) {
         ArrayList<String> L = new ArrayList<>();
         PopulaLista(L);
         ImprimeLista(L);
+        System.out.println(EncontraNomeSequencial(L, "Dan"));
+        System.out.println();
+        System.out.println(EncontraNomeBinario(L, "Dan"));
 
     }
-    public static void PopulaLista(ArrayList<String> Lista) {
+    public static void PopulaLista(ArrayList<String> lista) {
         String n;
         Scanner console = new Scanner(System.in);
         System.out.println("Digite nomes para popular o array | 'STOP' para parar");
         do {
             n = console.nextLine();
-            Lista.add(n);
+            lista.add(n);
         } while (!n.equalsIgnoreCase("stop"));
     }
 
-    public static void ImprimeLista(ArrayList<String> Lista) {
-        for (String a: Lista) {
+    public static void ImprimeLista(ArrayList<String> lista) {
+        for (String a: lista) {
             System.out.println(a);
         }
     }
 
+    public static boolean EncontraNomeSequencial(ArrayList<String> list, String n) {
+        for (String a: list) {
+            if(a.equalsIgnoreCase(n)) return true;
+        }
+        return false;
+    }
 
+    public static boolean EncontraNomeBinario(ArrayList<String> list, String n) {
+        Collections.sort(list);
+        int init = 0, middle, end = middle = list.size() -1;
+        while (init <= end) {
+            middle = (init + end) /2;
+            if(n.equalsIgnoreCase(list.get(middle))) {
+                return true;
+            } else if(n.compareToIgnoreCase(list.get(middle)) > 0) {
+                init = middle + 1;
+            } else {
+                end = middle - 1;
+            }
+        }
+        return false;
+    }
 }
