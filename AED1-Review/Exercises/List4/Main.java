@@ -9,10 +9,12 @@ public class Main {
         ArrayList<String> L = new ArrayList<>();
         PopulaLista(L);
         ImprimeLista(L);
-        System.out.println(EncontraNomeSequencial(L, "Dan"));
-        System.out.println(EncontraNomeBinario(L, "Dan"));
 
-        RemoveNomeSequencial(L, "Dan");
+        System.out.println(EncontraNomeBinario(L, "Dan"));
+        System.out.println(EncontraNomeSequencial(L, "Dan"));
+
+        RemoveNomeBinario(L, "Dan");
+
         ImprimeLista(L);
     }
     public static void PopulaLista(ArrayList<String> lista) {
@@ -39,13 +41,14 @@ public class Main {
     }
 
     public static boolean EncontraNomeBinario(ArrayList<String> list, String n) {
-        Collections.sort(list);
+        list.sort(String.CASE_INSENSITIVE_ORDER);
         int init = 0, middle, end = list.size() -1;
         while (init <= end) {
-            middle = (end - init) /2;
-            if(n.equalsIgnoreCase(list.get(middle))) {
+            middle = (init + end) /2;
+            int comparison = n.compareToIgnoreCase(list.get(middle));
+            if(comparison == 0) {
                 return true;
-            } else if(n.compareToIgnoreCase(list.get(middle)) > 0) {
+            } else if(comparison > 0) {
                 init = middle + 1;
             } else {
                 end = middle - 1;
@@ -55,9 +58,15 @@ public class Main {
     }
 
     public static void RemoveNomeSequencial(ArrayList<String> list, String n) {
-        for (int i = 0; i <= list.size() -1; i++) {
-            if(list.get(i).equalsIgnoreCase(n)) list.remove(i);
+        if(EncontraNomeSequencial(list, n)) {
+            list.remove(n);
         }
+
     }
 
+    public static void RemoveNomeBinario(ArrayList<String> list, String n) {
+        if(EncontraNomeBinario(list, n)) {
+            list.remove(n);
+        }
+    }
 }
