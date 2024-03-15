@@ -14,14 +14,11 @@ public class Main {
 
         RemoveNomeSequencial(L, "Dan");
         ImprimeLista(L);
-
-
-
     }
     public static void PopulaLista(ArrayList<String> lista) {
         String n = "";
         Scanner console = new Scanner(System.in);
-        System.out.println("Digite nomes para popular o array | 'STOP' para parar");
+        System.out.println("Digite nomes para popular o array | ''STOP'' para parar");
         while (!n.equalsIgnoreCase("stop")){
             n = console.nextLine();
             if(!n.equalsIgnoreCase("stop")) lista.add(n);
