@@ -1,4 +1,4 @@
-package List6;
+package List6e7;
 import java.util.Random;
 
 public class OrdenationMethods {
