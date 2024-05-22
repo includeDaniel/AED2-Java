@@ -12,6 +12,7 @@ public class Main {
         a.inverter();
         a.mostrar();
 
+
         System.out.println(a.menorRecursivo(a));
     }
 }

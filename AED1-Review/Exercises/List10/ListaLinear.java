@@ -10,9 +10,14 @@ public class ListaLinear<T> {
     }
 
     void inserirInicio(T x) throws Exception {
-        if (n >= array.length)
-            throw new Exception("Erro!");
-//levar elementos para o fim do array
+        if (n >= array.length) {
+            T[] arrayTemp = (T[]) new  Object[n * 2];
+            for(int i = 0; i <= array.length-1; i++) {
+                arrayTemp[i] = array[i];
+            }
+            array = arrayTemp;
+        }
+        //levar elementos para o fim do array
         for (int i = n; i > 0; i--){
             array[i] = array[i-1];
         }
@@ -21,8 +26,13 @@ public class ListaLinear<T> {
     }
 
     void inserirFim(T x) throws Exception {
-        if (n >= array.length)
-            throw new Exception("Erro!");
+        if (n >= array.length) {
+            T[] arrayTemp = (T[]) new Object[n * 2];
+            for (int i = 0; i <= array.length - 1; i++) {
+                arrayTemp[i] = array[i];
+            }
+            array = arrayTemp;
+        }
         array[n] = x;
         n++;
     }
@@ -31,7 +41,7 @@ public class ListaLinear<T> {
         if (n >= array.length)
             throw new Exception("Erro!");
 
-        for(int i = n; i > 0; i--) {
+        for(int i = 0; i < n; i++) {
             array[i] = array[i+1];
         }
         n--;
@@ -62,6 +72,11 @@ public class ListaLinear<T> {
             System.out.print(array[i] + " ");
         }
         System.out.println("]");
+    }
+
+    int tamanho () { return n;}
+    boolean estaVazia() {
+        return n == 0;
     }
 }
 

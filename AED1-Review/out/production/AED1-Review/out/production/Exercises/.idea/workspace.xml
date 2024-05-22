@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b0127fef-45a4-4899-a035-ec190ce656c6" name="Changes" comment="All review exercises done">
-      <change beforePath="$PROJECT_DIR$/List1/Ex07/index.java" beforeDir="false" afterPath="$PROJECT_DIR$/List1/Ex07/index.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/List10/ListaLinear.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/List10/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,20 +45,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/d21498/OneDrive - FUNDAÇÃO MOVIMENTO DIREITO E CIDADANIA/AED2/AED2-Java/AED1-Review/Exercises",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Daniel\OneDrive - FUNDAÇÃO MOVIMENTO DIREITO E CIDADANIA\AED2\AED2-Java\AED1-Review\Exercises" />
@@ -76,7 +78,7 @@
       <workItem from="1708298044784" duration="5057000" />
       <workItem from="1708303173633" duration="720000" />
       <workItem from="1708557061339" duration="5525000" />
-      <workItem from="1708903621998" duration="696000" />
+      <workItem from="1708903621998" duration="1107000" />
     </task>
     <task id="LOCAL-00001" summary="Ex03">
       <option name="closed" value="true" />
@@ -121,7 +123,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -130,6 +144,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Ex03" />
     <MESSAGE value="Ex04" />
+    <MESSAGE value="List 8 done" />
     <MESSAGE value="All review exercises done" />
     <option name="LAST_COMMIT_MESSAGE" value="All review exercises done" />
   </component>
